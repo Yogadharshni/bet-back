@@ -26,7 +26,7 @@ mongoose.connect("mongodb+srv://yogdharshni06:yogdharshni06@bulk.tsnn9rs.mongodb
     if (err) throw err;
     console.log('DB Connection Success');
 
-    router.post('/sentMail', async (req, res) => {
+    router.post('/emailTask/sentMail', async (req, res) => {
         var email = []
         let subject;
         let text;
